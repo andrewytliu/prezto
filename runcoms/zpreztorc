@@ -32,6 +32,7 @@ zstyle ':prezto:*:*' color 'yes'
 zstyle ':prezto:load' pmodule \
   'environment' \
   'android' \
+  'arcanist' \
   'git' \
   'terminal' \
   'editor' \
