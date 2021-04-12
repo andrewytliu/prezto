@@ -33,7 +33,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   # Branch (b)
   alias gb='git branch'
   alias gba='git branch --all --verbose'
-  alias gbc='git checkout -b --track'
+  alias gbc='git checkout --track -b'
   alias gbd='git branch --delete'
   alias gbD='git branch --delete --force'
   alias gbl='git branch --verbose'
@@ -48,6 +48,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias gbV='git branch --verbose --verbose'
   alias gbx='git branch --delete'
   alias gbX='git branch --delete --force'
+  alias gbum='git branch --set-upstream-to=main'
 
   # Commit (c)
   alias gc='git commit --verbose'
@@ -72,6 +73,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias gcl='git-commit-lost'
   alias gcy='git cherry -v --abbrev'
   alias gcY='git cherry -v'
+  alias gam='git commit -a --amend --no-edit'
 
   # Conflict (C)
   alias gCl='git --no-pager diff --name-only --diff-filter=U'
